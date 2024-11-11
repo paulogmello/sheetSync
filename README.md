@@ -22,7 +22,7 @@ To use this lib, you will need Google/Api client, the script and extra in the co
 
 #### Instancing a new sheetSync
 
-    $sheet= new  sheetSync('MyAppName', './credentials.json');
+    $sheet = new  sheetSync('MyAppName', './credentials.json');
 Theese two params are from your Google API
 
 #### Reading a Table
