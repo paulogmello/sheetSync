@@ -11,14 +11,11 @@ An easy and fast way to syncronize google sheets with your system
 
 **OBS: Before everything, you need create an API in Google for Developers because you will need a credentials.json and your Application Name**
 
-Add to your composer.json the following code
+Use the following code in composer
 
-    {
-    "require":{"google/apiclient": "^2.15.0"},
-    "scripts":{"pre-autoload-dump": "Google\\Task\\Composer::cleanup"},
-    "extra":{"google/apiclient-services": ["Drive","Sheets"]}
-    }
-To use this lib, you will need Google/Api client, the script and extra in the code is for you clean the code of others api from Google
+    composer require paulogmello/sheetsync
+    
+To use this lib, you will need Google/Api client, the script will bring all you will need
 
 #### Instancing a new sheetSync
 
