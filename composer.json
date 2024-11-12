@@ -1,0 +1,33 @@
+{
+    "name": "paulogmello/sheetsync",
+    "description": "A PHP lib to fast and easily syncronize with Google Sheets API",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Paulo Guilherme Mello",
+            "email": "paulogmfs@gmail.com"
+        }
+    ],
+    "config": {
+        "minimum-stability": "dev",
+        "prefer-stable": true
+    },
+    "autoload": {
+        "files": ["sheetsync.php"]
+    },
+    "require": {
+        "paulogmello/short-php": "dev-main",
+        "google/apiclient": "^2.15.0",
+        "tecnickcom/tcpdf": "^6.7"
+    },
+    "scripts": {
+        "pre-autoload-dump": "Google\\Task\\Composer::cleanup"
+    },
+    "extra": {
+        "google/apiclient-services": [
+            "Drive",
+            "Sheets"
+        ]
+    }
+} 
